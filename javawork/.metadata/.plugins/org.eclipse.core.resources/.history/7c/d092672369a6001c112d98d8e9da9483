@@ -1,0 +1,15 @@
+package day0318;
+
+public class E6Array2Cha {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//2차원 배열은 행과 열로 메모리 할당
+		int [][]arr=new int[2][3]; //2행 3열
+		System.out.println("행의갯수"+arr.length);
+		System.out.println("0행의 열갯수"+arr[0].length);
+		System.out.println("1행의 열갯수"+arr[1].length);
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package day0314;
+
+public class Ex1Text {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello Java!");
+		System.out.println("0¹ø ÀÎÀÚ :"+args[0]);
+	}
+
+}

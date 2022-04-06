@@ -1,0 +1,26 @@
+package day0315;
+
+import java.util.Scanner;
+
+public class Munje {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		int a;
+		int sum=0;
+		int b;
+		int x = 0;
+		
+		System.out.println("숫자 두개를 입력해주세요");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		
+		for (a=x; a<=b; a++) {
+			sum=sum+=a;
+		System.out.println();
+		}
+		}
+
+	}
+

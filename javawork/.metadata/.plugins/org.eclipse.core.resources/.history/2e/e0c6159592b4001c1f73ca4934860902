@@ -1,0 +1,25 @@
+package day0405;
+
+class Apple{
+	private void methodA() {
+		System.out.println("super메서드 A");
+	}
+	private void methodB() {
+		System.out.println("super메서드 B");
+	} //A 호출하는건 B뿐
+}
+class Banana extends Apple{
+	public void methodC() {
+		System.out.println("sub메서드 C");
+	} //바나나로호출하는건 BC 만가능
+}
+public class Ex3Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 Banana b=new Banana;
+	 b.methodB():
+	 b.methodC();
+	}
+
+}

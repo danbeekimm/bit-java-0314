@@ -1,0 +1,53 @@
+package day0317;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+//숫자 x,y를 입력받은후 x부터 y까지의 합계를 구하는 프로그램을 작성하시오
+//(예) 2 5 를 입력시  14 출력하면 됨
+//(for문 문제)
+//
+Scanner sc=new Scanner(System.in);
+
+
+	int x;
+	int y;
+	int sum;
+	System.out.println("x와 y를 입력하시오");
+	x=sc.nextInt();
+	y=sc.nextInt();
+	for (int i=1;i<=y;i++) {
+		sum = (x+=y);
+		
+		System.out.println(sum);
+		break;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+//2. 문자열 배열에 5개의 색상명(한글,영문 상관없음) 을 저장후 출력하는 프로그램을 작성하시오
+//(배열 문제)
+	
+	String []str1= {"빨강", "파랑","초록","하양","검정"};
+	
+	System.out.println();
+
+
+
+
+
+	}
+}

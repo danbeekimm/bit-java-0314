@@ -1,0 +1,59 @@
+package day0406;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Ex15sihum {
+
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		FileReader fr=null;
+		BufferedReader br=null; 
+		try {
+			fr=new FileReader("C:/bit java 0314/score.txt");
+			br=new BufferedReader(fr); 
+
+				String s;
+				int cou=0;
+				double avg = 0;
+				int n;
+				int tot=0;
+				
+				while(true) {
+					s=br.readLine();
+					if(s==null)
+						break;
+				n=Integer.parseInt(s);
+					System.out.println(n);
+				}
+//				System.out.println(s);
+//				System.out.println("ÃÑ°¹¼ö"+cou);
+//				System.out.println("ÃÑÁ¡:"+tot);
+//				System.out.println("Æò±Õ"+avg);
+				
+			
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("ÆÄÀÏÀÌ ¾ø¾î¿ä"+e.getMessage());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+				
+		}finally {
+			try {
+				if(br!=null) br.close();
+				if(fr!=null) fr.close();
+				
+				
+				
+			}catch (IOException e) {
+				
+			}
+		}
+		
+	}
+
+}

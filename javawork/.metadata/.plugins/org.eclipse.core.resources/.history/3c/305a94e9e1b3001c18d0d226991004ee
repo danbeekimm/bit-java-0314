@@ -1,0 +1,35 @@
+package day0404;
+//생성자(constructor)
+//특징1. 객체 생성시 자동호출
+//	2. 생성자는 오버로딩이 가능
+//3. 생성자명은 반드시 클래스명과 동일해야함. //에크마6와다름
+//4. 리턴타입(void 이런거)이 없다(형식:접근지정자 클래스명 (인자))
+//5. 주로 멤버변수의 초기화를 담당.
+//6. 같은 생성자끼리는 this()로 호출
+
+class Sawon{
+	String name;
+	String gender;
+	String buseo;
+	
+	Sawon(){
+		System.out.println("기본생성자");
+		name="김단비";
+		gender="여자";
+		buseo="홍보부";
+	}
+	public void write() {
+		System.out.println("이름:"+name);
+		System.out.println("성별:"+gender);
+		System.out.println("부서:"+buseo);
+		System.out.println();
+	}
+}
+public class Ex10Const {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sawon s1=new Sawon();
+	}
+
+}

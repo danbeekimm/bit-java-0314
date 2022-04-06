@@ -1,0 +1,25 @@
+package day0315;
+
+import java.util.Scanner;
+
+public class Munje {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//최댓값구하기 : 숫자 3 개 입력후 최대인 숫자 구하기
+		
+		Scanner sc = new Scanner(System.in);
+		int a, b, c;
+		int max;
+		
+		System.out.println("숫자 3개를 입력하시오");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		
+		max = a>b&&a>c ? a:b>a&&b>c?b:c;
+		System.out.println("최댓값은 "+max+"입니다");
+		
+	}
+
+}

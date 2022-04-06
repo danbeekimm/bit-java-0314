@@ -1,0 +1,33 @@
+package day0405;
+
+class Color{
+	private String colorName;
+	
+	Color()
+	{
+		System.out.println("super 디폴트 생성자");
+	}
+	Color(String colorName)
+	{
+		this.colorName=colorName;
+		System.out.println("super 2번째 생성자");
+	}
+}
+class Red extends Color
+{
+	Red()
+	{
+		super("노랑");// 생략되어있음 , 부모의 디폴트 생성ㅇ자 호출
+		//인자가있는 생성자는 생략안됨("노랑"), 반드시첫줄
+		System.out.println("sub 디폴트 생성자");
+	}
+	
+}
+public class Ex4Inheri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Red r1=new Red();
+	}
+
+}

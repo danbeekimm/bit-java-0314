@@ -1,0 +1,16 @@
+package day0406;
+//사용자 예외 클래스구현
+class UserException extends Exception
+{
+	public UserException(String msg) {
+		super (msg);//예외 메세지로 등록
+	}
+}
+public class Ex11UserException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

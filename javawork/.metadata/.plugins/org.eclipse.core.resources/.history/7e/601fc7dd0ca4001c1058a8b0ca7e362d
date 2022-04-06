@@ -1,0 +1,13 @@
+package day0315;
+
+public class Ex3String {
+
+	public static void main(String[] args) {
+		String s1 = "Happy";//规过1
+		String s2 = new String("Apple");//规过2
+		System.out.println(s1);
+		System.out.println(s2);
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package day0404;
+
+import java.util.Date;
+
+public class Ex12Const {
+	Date date; //날짜부터생성
+public Ex12Const() {
+	
+	date=new Date();
+}
+public void write(){
+	int y=date.getYear();
+	int m=date.getMonth();
+	int d=date.getDate();
+	
+	System.out.println("오늘날짜"+y+"년"+m+"월"+d+"일");
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ex12Const ex=new Ex12Const();
+		ex.write();
+	}
+
+}

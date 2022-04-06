@@ -1,0 +1,15 @@
+package day0315;
+
+import java.util.Scanner;
+
+public class Ex4Scanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); //system.in은키보드를읽음.
+		String msg="";//지역변수는 선언만하면에러남,쓰레기값이생길수있음. 초기화시켜야함.
+		//class는 초기화안시켜도됨. ""나 null로.
+		System.out.println(msg);
+
+	}
+
+}

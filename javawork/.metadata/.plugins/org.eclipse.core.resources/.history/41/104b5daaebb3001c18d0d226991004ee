@@ -1,0 +1,24 @@
+package day0404;
+
+import java.util.Date;
+
+public class Ex12Const {
+	Date date; //날짜부터생성
+public Ex12Const() {
+	
+	date=new Date();
+}
+public void write(){
+	int y=date.getYear()+1900; //풀이어가 없어 자바는 그래서 1900더해야함
+	int m=date.getMonth()+1; //0~11까지라
+	int d=date.getDate();
+	
+	System.out.println("오늘날짜"+y+"년"+m+"월"+d+"일");
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ex12Const ex=new Ex12Const();
+		ex.write();
+	}
+
+}

@@ -1,0 +1,17 @@
+package day0315;
+
+import java.util.Scanner;
+
+public class Ex11Ddi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int year;//태어난 년도
+		String ddi;//띠 저장
+		//태어난년도를입력하면 해당하는 띠를 출력하는 프로그램구현
+		//if 로 먼저 구하고 조건 연산자로도 구하기
+		//힌트:서기 1년은 닭띠이다.
+	}
+
+}

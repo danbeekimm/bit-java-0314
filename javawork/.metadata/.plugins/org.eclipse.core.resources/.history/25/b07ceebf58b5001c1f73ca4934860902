@@ -1,0 +1,21 @@
+package day0406;
+
+import java.util.Scanner;
+
+public class Ex8Exception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int su1,su2,sum;
+		System.out.println("숫자1입력");
+		su1=Integer.parseInt(sc.nextLine());
+		System.out.println("숫자2입력");
+		su2=Integer.parseInt(sc.nextLine());
+		
+		sum=su1+su2;
+		System.out.println(su1+"+"+su2+"="+sum);
+		System.out.println("**정상종료**");
+	}
+
+}

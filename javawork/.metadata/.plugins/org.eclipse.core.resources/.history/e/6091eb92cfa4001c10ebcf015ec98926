@@ -1,0 +1,19 @@
+package day0316;
+
+public class Ex3DoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=10;
+		System.out.println("while¹®");
+		while(a<10) {
+			System.out.println(a++);
+		}
+		a=10;
+		System.out.println("do~while¹®");
+		do {
+			System.out.println(a++);
+		}while(a<10);
+	}
+
+}

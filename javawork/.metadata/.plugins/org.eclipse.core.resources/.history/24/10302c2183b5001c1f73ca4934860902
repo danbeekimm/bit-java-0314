@@ -1,0 +1,71 @@
+package day0406;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Ex15sihum {
+
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		FileReader fr=null;
+		BufferedReader br=null; //줄단위로 읽는 메서들을 가지고잇음
+		try {
+			fr=new FileReader("C:/bit java 0314/score.txt");
+			br=new BufferedReader(fr); //이거쓰는이유:줄단위읽는메서드불러오기위해
+			
+			while(true)
+			{
+				String s=br.readLine();//한줄읽기
+	
+					int cou;
+					double avg;
+					int tot = 0;
+					
+					for(int i = 0;i< s.length();i++) {
+						cou  = (int)s.length();
+						tot += i;
+						avg = (double)tot/cou;
+						System.out.println(s);
+						System.out.println("총갯수"+cou);
+						System.out.println("총점:"+tot);
+						System.out.println("평균"+avg);
+				}
+				//총갯수
+//				int cou;
+//				double avg;
+//				int tot = 0;
+//				
+//				for(int i = 0;i< s.length();i++) {
+//					cou  = (int)s.length();
+//					tot += i;
+//					avg = (double)tot/cou;
+//					System.out.println("총갯수"+cou);
+//					System.out.println("총점:"+tot);
+//					System.out.println("평균"+avg);
+//				}System.out.println();
+			}
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("파일이 없어요"+e.getMessage());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+				
+		}finally {
+			try {
+				if(br!=null) br.close();
+				if(fr!=null) fr.close();
+				
+				
+				
+			}catch (IOException e) {
+				
+			}
+		}
+		
+	}
+
+}

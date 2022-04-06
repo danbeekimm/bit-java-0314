@@ -1,0 +1,11 @@
+package day0318;
+
+public class Ex1ArraySort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []data = {3,5,1,4,2};
+		
+	}
+
+}

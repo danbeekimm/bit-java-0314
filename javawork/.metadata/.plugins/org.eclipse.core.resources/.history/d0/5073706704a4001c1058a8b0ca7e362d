@@ -1,0 +1,14 @@
+package day0315;
+
+public class Ex1DataType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 기본형 연습
+		char ch = 'A';
+		char ch2 = '가';
+		char ch3=67;//'C'
+		char ch4=ch3+2;
+	}
+
+}

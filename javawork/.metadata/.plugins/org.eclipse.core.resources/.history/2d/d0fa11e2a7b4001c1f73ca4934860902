@@ -1,0 +1,41 @@
+package day0405;
+class Parent
+{
+	public void process()
+	{
+		System.out.println("부모가 딱히 하는일이 없음");
+	}
+}
+/////////////////////////////////
+class ChildA extends Parent
+{
+	@Override 
+	public void process() {
+		// TODO Auto-generated method stub
+		
+	System.out.println("페인트칠합니다");
+}
+}
+
+class ChildB extends Parent
+{
+	@Override 
+	public void process() {
+		// TODO Auto-generated method stub
+		
+	System.out.println("집안청소합니다");
+}
+}
+public class Ex7Abstract {
+	public static void process(Parent p)
+	{
+		// 다형성처리
+		p.process(); //오버라이드된 메서드만 호출이가능 (예외>부모만가지면 호출가능
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		process(new ChildA());
+		process(new ChildB());
+	}
+
+}

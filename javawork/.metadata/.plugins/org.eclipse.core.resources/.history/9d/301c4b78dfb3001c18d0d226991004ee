@@ -1,0 +1,21 @@
+package day0404;
+
+public class Ex9VarArg {
+	//...는 같은타입으로 갯수에 상관없이 인자로
+	//받을수있으며 배열타입으로 받는다
+	public static void writeColor(String...color) {
+		System.out.println("총"+color.length+"개");
+		for(String s:color)
+			System.out.println(s);
+		System.out.println();
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		writeColor();
+		writeColor("red");
+		writeColor("노랑","빨강","파랑");
+		writeColor("green","blue","pink","orange","yellow");
+	}
+
+}

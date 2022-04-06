@@ -1,0 +1,29 @@
+package day0315;
+
+import java.util.Scanner;
+
+public class Ex1Munje {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("상품명을 입력하시오");
+		
+		int  msg;
+		int count = 0;
+		
+		int total=0;
+		msg =sc.nextInt();
+		
+
+		
+		if (count>=5) 
+			System.out.println("총금액은 10% dc한"+total/10+"원 입니다.");
+		else  
+			System.out.println("총금액은"+total+"원 입니다.");
+		
+			
+	}
+}
+

@@ -1,0 +1,43 @@
+package day0316;
+
+import java.util.Scanner;
+
+public class Ex1Munje {
+
+	public static void main(String[] args) {
+		
+////1부터 100 사이의 난수를 변수 rnd 에 저장후
+//		그 숫자를 알아맞추는 프로그램을 작성하시오
+//		while문,if문,random 메서드 사용
+		int answer;
+		Scanner sc=new Scanner(System.in);
+		
+		for(int i=1;i<=100;i++) {
+			int rnd=(int) Math.random();
+			System.out.println("1~100 사이의 난수를 입력하시오");
+			answer=sc.nextInt();
+			
+			
+			while(true) {
+			if (rnd==0 || rnd>100) {
+			
+			System.out.println("1~100사이만 입력해주세요");}
+			continue;
+			if(answer<rnd) {
+				System.out.println(answer+"는"+rnd+"보다 작습니다.");}
+		
+			if (answer> rnd) {
+				System.out.println(answer+"는"+rnd+"보다 큽니다.");}
+			else {
+				System.out.println("정답은"+rnd+"입니다.");
+			break;}
+			
+			
+			
+			System.out.println();
+		}
+		
+	}
+	}
+}
+

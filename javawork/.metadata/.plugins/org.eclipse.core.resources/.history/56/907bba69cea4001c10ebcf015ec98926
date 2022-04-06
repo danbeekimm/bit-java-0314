@@ -1,0 +1,17 @@
+package day0316;
+
+public class Ex2While {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=65;
+		while(true) {
+			System.out.println((char)a);
+			a++;
+			if(a>=90)
+				break;
+		}
+		System.out.println();
+	}
+
+}

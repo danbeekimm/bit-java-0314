@@ -1,0 +1,21 @@
+package day0316;
+
+public class Ex1While {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=0;
+		while(++a<=5) {
+			System.out.println(a);
+		}
+		
+		System.out.println("빠져나온후의 a 값"+a);
+		a=0;
+		while(a++<=5) {
+			System.out.println(a);
+		}
+		System.out.println("빠져나온후의 a 값"+a);
+	}
+	
+
+}

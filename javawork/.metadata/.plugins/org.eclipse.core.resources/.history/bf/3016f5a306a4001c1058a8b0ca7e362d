@@ -1,0 +1,11 @@
+package day0315;
+
+public class Ex2DateType {
+
+	public static void main(String[] args) {
+		byte b1=127;
+		byte b2=129;
+
+	}
+
+}
